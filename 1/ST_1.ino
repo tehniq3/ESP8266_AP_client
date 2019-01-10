@@ -26,7 +26,7 @@ void setup() {
   }
   Serial.println();
   Serial.println("Connected");
-  Serial.println("station_bare_01a.ino");
+  Serial.println("ST_1.ino");
   Serial.print("LocalIP:"); Serial.println(WiFi.localIP());
   Serial.println("MAC:" + WiFi.macAddress());
   Serial.print("Gateway:"); Serial.println(WiFi.gatewayIP());
