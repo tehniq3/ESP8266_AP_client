@@ -22,7 +22,7 @@ void setup() {
   server.begin();
   pinMode(ledPin, OUTPUT);
   Serial.println();
-  Serial.println("accesspoint_bare_01a.ino");
+  Serial.println("AP_1.ino");
   Serial.println("Server started.");
   Serial.print("IP: ");     Serial.println(WiFi.softAPIP());
   Serial.print("MAC:");     Serial.println(WiFi.softAPmacAddress());
