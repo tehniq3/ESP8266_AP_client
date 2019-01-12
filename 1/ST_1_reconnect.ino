@@ -50,6 +50,7 @@ if (WiFi.status() != WL_CONNECTED)  // https://www.reddit.com/r/esp8266/comments
                                     // http://nicuflorica.blogspot.com/2016/12/comanda-led-de-pe-pagina-web-creata-cu.html
     {
       WiFi.disconnect();
+      WiFi.mode(WIFI_STA);
       WiFi.begin(ssid, pass);
          // Wait for connection
   for (int i = 0; i < 25; i++)
