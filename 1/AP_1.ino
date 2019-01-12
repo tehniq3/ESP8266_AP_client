@@ -37,7 +37,7 @@ void loop() {
   Serial.println("From the station: " + request);
   client.flush();
   Serial.print("Byte sent to the station: ");
-  Serial.println(client.println(request + "ca" + "\r"));
-//  Serial.println(client.println("Hi, friend" + "\r"));
+//  Serial.println(client.println(request + "ca" + "\r"));
+  Serial.println(client.println("Hi, friend \r"));
   digitalWrite(ledPin, HIGH);
 }
