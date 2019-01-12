@@ -61,7 +61,8 @@ void loop() {
   delay(3000);
 if (WiFi.status() != WL_CONNECTED)  // https://www.reddit.com/r/esp8266/comments/3rnytf/esp8266_arduino_reconnect_on_wifi_loss/
                                     // http://nicuflorica.blogspot.com/2016/12/comanda-led-de-pe-pagina-web-creata-cu.html 
-                                    //   https://techtutorialsx.com/2017/12/29/esp8266-arduino-software-restart/
+{                                    //   https://techtutorialsx.com/2017/12/29/esp8266-arduino-software-restart/
     Serial.println("Reset..");
     ESP.restart();
+}
 }
