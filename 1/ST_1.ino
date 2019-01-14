@@ -1,7 +1,8 @@
 /*  Accesspoint - station communication without router
  *  see: https://github.com/esp8266/Arduino/blob/master/doc/esp8266wifi/station-class.rst
  *  Works with: AP-1.ino
- *  small changes by Nicu FLORICA (niq_ro)
+ *  small and "smart" changes by Nicu FLORICA (niq_ro)
+ *  http://www.arduinotehniq.com
  */
  
 #define rezet D0
