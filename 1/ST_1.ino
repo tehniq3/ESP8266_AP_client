@@ -22,17 +22,14 @@ WiFiClient client;
 int contor = 0;
 
 void setup() {
-//  delay(2000);
   digitalWrite(rezet, HIGH);  // http://nicuflorica.blogspot.com/2015/11/termostat-controlat-de-pe-o-pagina-web-2.html
   pinMode(rezet, OUTPUT);  // hard reset - https://github.com/esp8266/Arduino/issues/1622 
   digitalWrite(rezet, HIGH);
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW); 
   delay(2000);
- // ESP.wdtDisable();
   Serial.begin(9600);
   delay(500);
-//  ESP.wdtEnable(WDTO_4S);
   WiFi.disconnect();
   delay(500);
   WiFi.mode(WIFI_STA);
@@ -62,7 +59,6 @@ void loop() {
   Serial.println(client.print("Hi, boss!\r"));
   String answer = client.readStringUntil('\r');
   Serial.print("From the AP: " + answer);
- // int result = answer.toInt();
   int i, len;  // https://circuits4you.com/2018/03/09/how-to-convert-int-to-string-on-arduino/
   int result=0; 
   len = answer.length();
@@ -92,7 +88,7 @@ if (len < 1)
   } 
  
  
-if (contor > 20)
+if (contor > 200)
   { 
     Serial.println("obercount - reset");
 digitalWrite(rezet, LOW); delay(100); //After than reset no need to delay but I put it for fun :)
