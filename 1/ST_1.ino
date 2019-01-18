@@ -5,7 +5,7 @@
  *  http://www.arduinotehniq.com
  */
  
-#define rezet D0
+#define rezet D5  // D5 is more ok than D0
 #include <ESP8266WiFi.h>
 /*
 extern "C" {
